@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark light;
+  }
+  
+  body {
+    background-color: #06101E;
+    color: #F8F9FA;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-heading {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom Institutional Gold Utilities */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F3E5AB 0%, #C5A059 50%, #9A7B38 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #D4B36C 0%, #C5A059 50%, #A68434 100%);
+}
+
+.bg-gold-gradient-hover {
+  background: linear-gradient(135deg, #E4C785 0%, #D4B36C 50%, #C5A059 100%);
+}
+
+.border-gold-gradient {
+  border-image: linear-gradient(135deg, #C5A059, #F3E5AB, #9A7B38) 1;
+}
+
+/* Institutional Card Styling */
+.card-navy {
+  background: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-navy:hover {
+  border-color: rgba(197, 160, 89, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(197, 160, 89, 0.15);
+}
+
+.card-light {
+  background: #FFFFFF;
+  color: #0A192F;
+  border: 1px solid rgba(10, 25, 47, 0.1);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Placeholder Highlight Mode */
+.placeholder-highlighted {
+  outline: 2px dashed #C5A059 !important;
+  outline-offset: 4px;
+  position: relative;
+}
+
+.placeholder-highlighted::after {
+  content: 'PLACEHOLDER - REQUIRES REPLACEMENT';
+  position: absolute;
+  top: -12px;
+  right: 12px;
+  background: #C5A059;
+  color: #06101E;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 2px;
+  letter-spacing: 0.05em;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #06101E;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A3B66;
+  border-radius: 4px;
+  border: 2px solid #06101E;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
