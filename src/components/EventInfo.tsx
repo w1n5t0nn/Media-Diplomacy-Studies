@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MapPin, Bookmark, Users, Navigation, Sparkles } from 'lucide-react';
+import { Calendar, MapPin, Users, Navigation, Sparkles } from 'lucide-react';
 
 interface EventInfoProps {
   onOpenVenue: () => void;

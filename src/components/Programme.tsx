@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Calendar, FileText, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Clock, AlertCircle } from 'lucide-react';
 
 export const Programme: React.FC = () => {
   const scheduleSessions = [

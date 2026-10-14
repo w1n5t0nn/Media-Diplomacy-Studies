@@ -27,7 +27,7 @@ export interface FAQItem {
 export interface NewsItem {
   id: string;
   title: string;
-  category: 'Press Release' | 'Policy Insight' | 'Event Update' | 'Media Commentary';
+  category: 'Press Release' | 'Policy Insight' | 'Event Update' | 'Media Commentary' | 'Speaker Announcement' | 'Media';
   date: string;
   summary: string;
   isPlaceholder: boolean;

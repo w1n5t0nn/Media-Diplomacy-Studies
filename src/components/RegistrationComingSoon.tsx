@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Bell, ShieldCheck, Lock, CheckCircle2, Mail, Info } from 'lucide-react';
+import { Bell, Lock, CheckCircle2, Mail } from 'lucide-react';
 
 interface RegistrationComingSoonProps {
   onOpenNotify: () => void;
 }
 
-export const RegistrationComingSoon: React.FC<RegistrationComingSoonProps> = ({ onOpenNotify }) => {
+export const RegistrationComingSoon: React.FC<RegistrationComingSoonProps> = ({ onOpenNotify: _onOpenNotify }) => {
   const [quickEmail, setQuickEmail] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
 

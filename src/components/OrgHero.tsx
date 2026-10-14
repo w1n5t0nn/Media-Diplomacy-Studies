@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, Building2, Shield, Calendar, ArrowRight, Sparkles, Award, MessageSquare } from 'lucide-react';
+import { Globe, Calendar, ArrowRight, Sparkles, Award } from 'lucide-react';
 
 interface OrgHeroProps {
   onOpenNotify: () => void;
