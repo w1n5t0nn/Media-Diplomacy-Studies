@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bell, ShieldCheck, Lock, CheckCircle2, Mail, Info } from 'lucide-react';
+import { Bell, Lock, CheckCircle2, Mail } from 'lucide-react';
 
 interface RegistrationComingSoonProps {
   onOpenNotify: () => void;
@@ -73,6 +73,15 @@ export const RegistrationComingSoon: React.FC<RegistrationComingSoonProps> = ({ 
                   <span>Thank you! Your notification preference has been saved.</span>
                 </div>
               )}
+              <div className="mt-3 text-center">
+                <button
+                  type="button"
+                  onClick={onOpenNotify}
+                  className="text-xs text-gold-400 hover:text-gold-300 hover:underline transition-colors"
+                >
+                  Looking for full accreditation pre-registration? Open Priority Registration Form &rarr;
+                </button>
+              </div>
             </div>
 
             {/* Information Grid */}

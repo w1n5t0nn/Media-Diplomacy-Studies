@@ -1,14 +1,14 @@
 import React from 'react';
-import { Globe, Building2, Shield, Calendar, ArrowRight, Sparkles, Award, MessageSquare } from 'lucide-react';
+import { Globe, Calendar, ArrowRight, Sparkles, Award } from 'lucide-react';
 
 interface OrgHeroProps {
   onOpenNotify: () => void;
   isAuditMode: boolean;
 }
 
-export const OrgHero: React.FC<OrgHeroProps> = ({ onOpenNotify }) => {
+export const OrgHero: React.FC<OrgHeroProps> = ({ onOpenNotify, isAuditMode }) => {
   return (
-    <section id="org-hero" className="relative pt-32 pb-16 bg-navy-950 overflow-hidden border-b border-navy-800">
+    <section id="org-hero" className={`relative pt-32 pb-16 bg-navy-950 overflow-hidden border-b border-navy-800 ${isAuditMode ? 'placeholder-highlighted' : ''}`}>
       {/* Editorial Background Lighting */}
       <div className="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-gold-500/20 via-navy-900/60 to-navy-950" />
       

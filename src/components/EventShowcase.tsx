@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Calendar, Sparkles, Star, ChevronDown, Landmark } from 'lucide-react';
+import { Award, Calendar } from 'lucide-react';
 import { Hero } from './Hero';
 import { AboutEvent } from './AboutEvent';
 import { AboutAmbassador } from './AboutAmbassador';

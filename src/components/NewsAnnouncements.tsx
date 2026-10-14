@@ -1,5 +1,5 @@
 import React from 'react';
-import { Newspaper, Calendar, Tag, ArrowUpRight } from 'lucide-react';
+import { Calendar, ArrowUpRight } from 'lucide-react';
 import { NewsItem } from '../types';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
@@ -36,7 +36,7 @@ export const NewsAnnouncements: React.FC<NewsAnnouncementsProps> = ({ isAuditMod
     {
       id: 'news-4',
       title: 'Call for Monograph Submissions: State Media Diplomacy in Africa',
-      category: 'Media',
+      category: 'Media Commentary',
       date: '10 July 2026',
       summary: 'Academic scholars and public diplomacy researchers invited to submit research papers for inclusion in the official summit proceedings.',
       isPlaceholder: true,

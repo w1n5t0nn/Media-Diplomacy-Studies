@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User, Phone, Mail, MapPin, Send, CheckCircle2, MessageSquare, Globe, Building2 } from 'lucide-react';
+import { User, Phone, Mail, MapPin, Send, CheckCircle2, MessageSquare, Globe } from 'lucide-react';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
 interface ContactSectionProps {

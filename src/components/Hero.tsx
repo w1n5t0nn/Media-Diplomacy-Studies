@@ -165,9 +165,20 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
               </div>
 
-              <div className="mt-4 pt-4 border-t border-navy-800 text-xs text-slate-400 flex items-center justify-center gap-2">
-                <Calendar className="w-3.5 h-3.5 text-gold-400" />
-                <span>Target Event Date: <strong>20 November 2026</strong> · Abuja, Nigeria</span>
+              <div className="mt-4 pt-4 border-t border-navy-800 text-xs text-slate-400 flex flex-wrap items-center justify-center gap-3">
+                <span className="flex items-center gap-1.5">
+                  <Calendar className="w-3.5 h-3.5 text-gold-400" />
+                  Target Event Date: <strong className="text-white">20 November 2026</strong>
+                </span>
+                <span className="text-navy-700 hidden sm:inline">·</span>
+                <button
+                  type="button"
+                  onClick={onOpenVenue}
+                  className="inline-flex items-center gap-1.5 text-gold-400 hover:text-gold-300 hover:underline transition-colors"
+                >
+                  <MapPin className="w-3.5 h-3.5" />
+                  <span>Shehu Musa Yar'Adua Centre, Abuja</span>
+                </button>
               </div>
             </div>
           </div>
