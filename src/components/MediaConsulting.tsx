@@ -1,5 +1,4 @@
 import React from 'react';
-import { Briefcase, Building2, ShieldCheck, Radio, ChevronRight } from 'lucide-react';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
 interface MediaConsultingProps {

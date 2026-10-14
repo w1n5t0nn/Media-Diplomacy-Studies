@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, Bell, Share2, MapPin, ChevronDown, Award, Sparkles } from 'lucide-react';
+import { Calendar, Bell, Share2, ChevronDown, Award, Sparkles } from 'lucide-react';
 import { CountdownTime } from '../types';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
@@ -13,7 +13,6 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({
   onOpenNotify,
   onOpenShare,
-  onOpenVenue,
   isAuditMode,
 }) => {
   // Target Event Date: 20 November 2026, 09:00 AM WAT

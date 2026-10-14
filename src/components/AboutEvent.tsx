@@ -1,5 +1,5 @@
 import React from 'react';
-import { Landmark, Globe2, MessageSquare, Shield, Users, Compass, ChevronRight } from 'lucide-react';
+import { Landmark, Globe2, MessageSquare, Users, Compass, ChevronRight } from 'lucide-react';
 
 export const AboutEvent: React.FC = () => {
   const pillars = [
