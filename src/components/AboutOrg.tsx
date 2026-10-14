@@ -1,5 +1,5 @@
 import React from 'react';
-import { Landmark, Globe2, Shield, Users, Award, BookOpen, Building } from 'lucide-react';
+import { Landmark, Globe2, Building } from 'lucide-react';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
 interface AboutOrgProps {
@@ -35,7 +35,7 @@ export const AboutOrg: React.FC<AboutOrgProps> = ({ isAuditMode }) => {
   ];
 
   return (
-    <section id="about-org" className="py-16 bg-navy-900 border-t border-navy-800 relative">
+    <section id="about-org" className={`py-16 bg-navy-900 border-t border-navy-800 relative ${isAuditMode ? 'placeholder-highlighted' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
