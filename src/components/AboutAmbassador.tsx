@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Landmark, BookOpen, User, Star, Calendar } from 'lucide-react';
+import { Award, User, Star } from 'lucide-react';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
 interface AboutAmbassadorProps {

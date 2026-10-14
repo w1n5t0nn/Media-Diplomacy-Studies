@@ -1,5 +1,5 @@
 import React from 'react';
-import { Newspaper, Calendar, Tag, ArrowUpRight } from 'lucide-react';
+import { Calendar, ArrowUpRight } from 'lucide-react';
 import { NewsItem } from '../types';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
