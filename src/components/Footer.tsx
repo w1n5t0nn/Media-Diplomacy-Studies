@@ -1,5 +1,5 @@
 import React from 'react';
-import { Twitter, Linkedin, Facebook, Youtube, Globe, ArrowUp } from 'lucide-react';
+import { Twitter, Linkedin, Facebook, Youtube, ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const hashtags = [

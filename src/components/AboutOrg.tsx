@@ -1,12 +1,12 @@
 import React from 'react';
-import { Landmark, Globe2, Shield, Users, Award, BookOpen, Building } from 'lucide-react';
+import { Landmark, Globe2, Building } from 'lucide-react';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
 interface AboutOrgProps {
   isAuditMode: boolean;
 }
 
-export const AboutOrg: React.FC<AboutOrgProps> = ({ isAuditMode }) => {
+export const AboutOrg: React.FC<AboutOrgProps> = ({ isAuditMode: _isAuditMode }) => {
   const pillars = [
     {
       title: 'Media Advisory & Consulting',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Award, Radio, Globe, Mail, Phone, ShieldCheck, Newspaper } from 'lucide-react';
+import { User, Radio, Globe, Mail, Phone, Newspaper } from 'lucide-react';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
 interface LeadConsultantProfileProps {

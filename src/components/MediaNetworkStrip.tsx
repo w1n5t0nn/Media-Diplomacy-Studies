@@ -1,5 +1,5 @@
 import React from 'react';
-import { Radio, Tv, Newspaper, Globe, Award } from 'lucide-react';
+import { Radio } from 'lucide-react';
 import { PlaceholderBadge } from './PlaceholderBadge';
 
 interface MediaNetworkStripProps {

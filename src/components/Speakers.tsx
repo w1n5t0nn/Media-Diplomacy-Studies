@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { UserCheck, Sparkles, ChevronRight, Info } from 'lucide-react';
+import { UserCheck, Sparkles, ChevronRight } from 'lucide-react';
 import { Speaker } from '../types';
 import { SpeakerModal } from './SpeakerModal';
 import { PlaceholderBadge } from './PlaceholderBadge';
