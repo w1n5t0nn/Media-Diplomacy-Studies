@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annual Diplomacy Day 2026 — Media Diplomacy Studies (MDS)</title>
+  <meta name="description" content="Official Flagship Convening of Media Diplomacy Studies (MDS) — National Strategic Dialogue on Diplomacy, State Media Diplomacy and Global Influence." />
+  <link rel="icon" type="image/png" href="/mds-logo.png" />
+  
+  <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            'nav': '1200px',
+          },
+          colors: {
+            navy: {
+              800: '#0f2744',
+              850: '#0c1f36',
+              900: '#0a192f',
+              950: '#06101e'
+            },
+            gold: {
+              300: '#e5c07b',
+              400: '#d4af37',
+              500: '#c5a059',
+              600: '#997b3e',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-gold-gradient {
+      background: linear-gradient(135deg, #d4af37 0%, #c5a059 50%, #997b3e 100%);
+    }
+    .bg-gold-gradient-hover:hover {
+      background: linear-gradient(135deg, #e5c07b 0%, #d4af37 50%, #b8860b 100%);
+    }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #e5c07b 0%, #d4af37 50%, #c5a059 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .modal-backdrop {
+      background-color: rgba(6, 16, 30, 0.85);
+      backdrop-filter: blur(8px);
+    }
+    .placeholder-target {
+      position: relative;
+    }
+    .placeholder-highlighted {
+      outline: 2px dashed #d4af37 !important;
+      outline-offset: 4px;
+      position: relative;
+    }
+    .placeholder-highlighted::after {
+      content: 'AUDIT PLACEHOLDER';
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      background: #d4af37;
+      color: #06101e;
+      font-size: 9px;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      z-index: 30;
+    }
+  </style>
+</head>
+<body class="bg-navy-950 text-slate-100 font-sans antialiased selection:bg-gold-500 selection:text-navy-950 min-h-screen flex flex-col">
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div id="mobile-menu-backdrop" onclick="toggleMobileDrawer()" class="hidden fixed inset-0 z-40 bg-black/60 backdrop-blur-sm nav:hidden transition-opacity"></div>
+
+  <!-- NAVIGATION BAR (Fixed Top Header) -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-[#06101E]/95 backdrop-blur-md border-b border-gold-500/20 py-2.5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between gap-2 sm:gap-4">
+        
+        <!-- Brand Crest & Monogram -->
+        <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+          <img src="/mds-logo.png" alt="MDS Logo" class="w-10 h-10 object-contain drop-shadow-[0_0_10px_rgba(197,160,89,0.3)] transition-transform group-hover:scale-105" />
+          <div class="flex flex-col">
+            <span class="font-serif text-lg font-bold text-white tracking-wide leading-tight group-hover:text-gold-300 transition-colors">
+              Media Diplomacy Studies
+            </span>
+            <span class="text-[9px] font-mono uppercase tracking-widest text-gold-400 font-semibold">
+              MDS • NIGERIA & AFRICA
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Items (>= 1200px) -->
+        <nav class="hidden nav:flex items-center space-x-1 xl:space-x-1.5 shrink">
+          <a href="index.html" class="px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:text-white hover:bg-navy-900 rounded-lg transition-colors whitespace-nowrap">Home</a>
+          <a href="about.html" class="px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:text-white hover:bg-navy-900 rounded-lg transition-colors whitespace-nowrap">About Us</a>
+          <a href="research.html" class="px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:text-white hover:bg-navy-900 rounded-lg transition-colors whitespace-nowrap">Research & Studies</a>
+          <a href="publications.html" class="px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:text-white hover:bg-navy-900 rounded-lg transition-colors whitespace-nowrap">Publications</a>
+          <a href="diplomacy-day.html" class="px-2.5 py-1.5 text-xs font-bold bg-gold-gradient text-navy-950 rounded-lg shadow transition-colors whitespace-nowrap">
+            Annual Diplomacy Day 2026
+          </a>
+          <a href="leadership.html" class="px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:text-white hover:bg-navy-900 rounded-lg transition-colors whitespace-nowrap">Fellows & Leadership</a>
+          <a href="contact.html" class="px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:text-white hover:bg-navy-900 rounded-lg transition-colors whitespace-nowrap">Contact</a>
+
+          <!-- Quick Shortcuts Dropdown -->
+          <div class="relative inline-block text-left shrink-0">
+            <button onclick="toggleShortcutsDropdown()" class="px-2 py-1.5 text-xs font-medium text-slate-300 hover:text-white flex items-center gap-1 transition-colors whitespace-nowrap">
+              <span>Shortcuts</span>
+              <svg class="w-3.5 h-3.5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div id="shortcuts-dropdown" class="hidden absolute right-0 mt-2 w-64 bg-[#0A192F] border border-gold-500/30 rounded-xl shadow-2xl py-2 z-50">
+              <div class="px-3 py-1 text-[10px] font-mono uppercase tracking-widest text-gold-400 border-b border-navy-800 mb-1">Institutional Links</div>
+              <a href="research.html#research-programmes" onclick="closeShortcutsDropdown()" class="block px-4 py-1.5 text-xs text-slate-300 hover:text-gold-300 hover:bg-navy-800 whitespace-nowrap">6 Research Programmes</a>
+              <a href="publications.html#policy-briefs" onclick="closeShortcutsDropdown()" class="block px-4 py-1.5 text-xs text-slate-300 hover:text-gold-300 hover:bg-navy-800 whitespace-nowrap">Policy Briefs & Reports</a>
+              <a href="research.html#fellows-network" onclick="closeShortcutsDropdown()" class="block px-4 py-1.5 text-xs text-slate-300 hover:text-gold-300 hover:bg-navy-800 whitespace-nowrap">Scholar-Practitioner Network</a>
+              <div class="px-3 py-1 text-[10px] font-mono uppercase tracking-widest text-gold-400 border-b border-t border-navy-800 my-1">Flagship Summit</div>
+              <a href="diplomacy-day.html" onclick="closeShortcutsDropdown()" class="block px-4 py-1.5 text-xs text-slate-300 hover:text-gold-300 hover:bg-navy-800 whitespace-nowrap">Annual Diplomacy Day (20 Nov 2026)</a>
+              <a href="diplomacy-day.html#summit-countdown" onclick="closeShortcutsDropdown()" class="block px-4 py-1.5 text-xs text-slate-300 hover:text-gold-300 hover:bg-navy-800 whitespace-nowrap">Summit Countdown Timer</a>
+              <a href="diplomacy-day.html#summit-speakers" onclick="closeShortcutsDropdown()" class="block px-4 py-1.5 text-xs text-slate-300 hover:text-gold-300 hover:bg-navy-800 whitespace-nowrap">Speaker Faculty</a>
+              <a href="diplomacy-day.html#summit-agenda" onclick="closeShortcutsDropdown()" class="block px-4 py-1.5 text-xs text-slate-300 hover:text-gold-300 hover:bg-navy-800 whitespace-nowrap">Programme Schedule</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Right Desktop CTAs (Commented out as requested; uncomment if needed later) -->
+        <!--
+        <div class="hidden nav:flex items-center space-x-2 shrink-0">
+          <button onclick="openNotifyModal()" class="px-3 py-1.5 bg-gold-gradient hover:bg-gold-gradient-hover text-navy-950 font-bold rounded-lg text-xs shadow flex items-center gap-1.5 transition-all whitespace-nowrap">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+            <span>Accreditation Notice</span>
+          </button>
+        </div>
+        -->
+
+        <!-- Mobile & Tablet Drawer Trigger (< 1200px) -->
+        <div class="flex items-center nav:hidden shrink-0">
+          <div class="relative">
+            <button onclick="toggleMobileDrawer()" id="menu-toggle-btn" class="px-3.5 py-1.5 rounded-lg text-gold-400 bg-navy-900 border border-gold-500/30 flex items-center gap-1.5 text-xs font-semibold hover:text-white transition-colors">
+              <svg id="menu-icon-open" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+              <svg id="menu-icon-close" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+              <span>Menu</span>
+            </button>
+
+            <!-- RIGHT-ALIGNED FLOATING FROSTED GLASS DROPDOWN -->
+            <div id="mobile-drawer" class="hidden absolute right-0 top-full mt-2.5 z-50 w-[calc(100vw-32px)] sm:w-[380px] max-w-[calc(100vw-32px)] sm:max-w-[380px] max-h-[calc(100vh-90px)] overflow-y-auto bg-[#06101E]/80 backdrop-blur-2xl border border-gold-500/35 rounded-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.85),0_0_25px_rgba(197,160,89,0.2)] p-4 sm:p-5 transition-all duration-200 origin-top-right">
+              
+              <!-- Header with MDS Crest & Close Button -->
+              <div class="flex items-center justify-between pb-3.5 mb-3 border-b border-white/10">
+                <div class="flex items-center gap-2.5">
+                  <img src="/mds-logo.png" alt="MDS Logo" class="w-8 h-8 object-contain drop-shadow-[0_0_8px_rgba(197,160,89,0.3)]" />
+                  <div>
+                    <span class="block font-serif text-sm font-bold text-white">Media Diplomacy Studies</span>
+                    <span class="block text-[8px] font-mono text-gold-400 font-semibold tracking-wider">RESEARCH • POLICY • INFLUENCE</span>
+                  </div>
+                </div>
+                <button onclick="toggleMobileDrawer()" class="p-1.5 text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 transition-colors" title="Close Menu">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+              </div>
+
+              <!-- Section 1: Institutional Platform Navigation -->
+              <div class="space-y-1 mb-4">
+                <span class="text-[9px] font-mono uppercase tracking-widest text-gold-400 font-bold block mb-1 px-1">Institutional Platform</span>
+                <a href="index.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-white/[0.03] hover:bg-gold-500/15 border border-white/[0.06] hover:border-gold-500/40 text-slate-200 hover:text-white text-xs font-medium backdrop-blur-sm transition-all">
+                  <span>Home & Mission</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+                <a href="about.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-white/[0.03] hover:bg-gold-500/15 border border-white/[0.06] hover:border-gold-500/40 text-slate-200 hover:text-white text-xs font-medium backdrop-blur-sm transition-all">
+                  <span>About Us & Mandate</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+                <a href="research.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-white/[0.03] hover:bg-gold-500/15 border border-white/[0.06] hover:border-gold-500/40 text-slate-200 hover:text-white text-xs font-medium backdrop-blur-sm transition-all">
+                  <span>Research & Studies (6 Programmes)</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+                <a href="publications.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-white/[0.03] hover:bg-gold-500/15 border border-white/[0.06] hover:border-gold-500/40 text-slate-200 hover:text-white text-xs font-medium backdrop-blur-sm transition-all">
+                  <span>Publications & Policy Briefs</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+                <a href="leadership.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-white/[0.03] hover:bg-gold-500/15 border border-white/[0.06] hover:border-gold-500/40 text-slate-200 hover:text-white text-xs font-medium backdrop-blur-sm transition-all">
+                  <span>Fellows & Leadership</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+                <a href="contact.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-white/[0.03] hover:bg-gold-500/15 border border-white/[0.06] hover:border-gold-500/40 text-slate-200 hover:text-white text-xs font-medium backdrop-blur-sm transition-all">
+                  <span>Secretariat Contact</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+              </div>
+
+              <!-- Section 2: Flagship Annual Summit 2026 -->
+              <div class="space-y-1 mb-4 pt-3 border-t border-white/10">
+                <span class="text-[9px] font-mono uppercase tracking-widest text-gold-400 font-bold block mb-1 px-1">Flagship Summit 2026</span>
+                <a href="diplomacy-day.html" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-gold-500/20 border border-gold-500/40 text-gold-300 font-bold text-xs backdrop-blur-sm transition-all">
+                  <span>Annual Diplomacy Day (20 Nov 2026)</span>
+                  <span class="text-xs">★</span>
+                </a>
+                <a href="diplomacy-day.html#summit-countdown" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2 rounded-xl bg-white/[0.02] hover:bg-gold-500/10 border border-white/[0.05] hover:border-gold-500/30 text-slate-300 hover:text-white text-[11px] backdrop-blur-sm transition-all">
+                  <span>Live Summit Countdown</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+                <a href="diplomacy-day.html#book-launch" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2 rounded-xl bg-white/[0.02] hover:bg-gold-500/10 border border-white/[0.05] hover:border-gold-500/30 text-slate-300 hover:text-white text-[11px] backdrop-blur-sm transition-all">
+                  <span>Featured Book Launch</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+                <a href="diplomacy-day.html#summit-speakers" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2 rounded-xl bg-white/[0.02] hover:bg-gold-500/10 border border-white/[0.05] hover:border-gold-500/30 text-slate-300 hover:text-white text-[11px] backdrop-blur-sm transition-all">
+                  <span>Featured Speaker Faculty</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+                <a href="diplomacy-day.html#summit-agenda" onclick="toggleMobileDrawer()" class="flex items-center justify-between px-3.5 py-2 rounded-xl bg-white/[0.02] hover:bg-gold-500/10 border border-white/[0.05] hover:border-gold-500/30 text-slate-300 hover:text-white text-[11px] backdrop-blur-sm transition-all">
+                  <span>Programme Schedule Outline</span>
+                  <span class="text-gold-400 text-xs">→</span>
+                </a>
+              </div>
+
+              <!-- Bottom Action Button -->
+              <div class="pt-3 border-t border-white/10">
+                <button onclick="toggleMobileDrawer(); openNotifyModal();" class="w-full py-2.5 bg-gold-gradient hover:bg-gold-gradient-hover text-navy-950 font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg transition-transform active:scale-95">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                  <span>Accreditation Notification</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow pt-24">
+    
+    <!-- 5. FLAGSHIP CONVENING: ANNUAL DIPLOMACY DAY 2026 -->
+    <section id="diplomacy-day" class="relative bg-navy-950 border-t-4 border-gold-500 py-16">
+      
+      <!-- Flagship Header Banner -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        <div class="p-6 sm:p-8 bg-gradient-to-r from-navy-900 via-navy-850 to-navy-900 border border-gold-500/40 rounded-3xl shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+          <div class="space-y-1">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-gold-400 font-mono">
+              Flagship Annual Convening of Media Diplomacy Studies (MDS)
+            </span>
+            <h1 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+              Annual Diplomacy Day 2026
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-300 max-w-2xl">
+              Convening ambassadors, ministers, media directors, and strategic communicators to shape Nigeria’s and Africa’s global narrative power.
+            </p>
+          </div>
+          <button onclick="openNotifyModal()" class="px-6 py-3 bg-gold-gradient hover:bg-gold-gradient-hover text-navy-950 font-bold text-xs rounded-xl shadow-lg shrink-0">
+            Priority Accreditation Notice
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero & Live Countdown Timer -->
+      <div id="summit-countdown" class="text-center relative overflow-hidden mb-16">
+        <div class="max-w-5xl mx-auto px-4 z-10 relative">
+          
+          <p class="font-serif text-gold-400 text-lg sm:text-2xl font-semibold uppercase mb-2">
+            "THE COUNTDOWN BEGINS…"
+          </p>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white tracking-tight leading-tight mb-4">
+            Annual Diplomacy Day <span class="text-gold-gradient">2026</span>
+          </h2>
+          <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-300 mb-8 leading-relaxed">
+            Diplomacy is no longer confined to embassies. In today's interconnected world, nations compete through ideas, perception, influence, strategic communication and the power of their global narratives.
+          </p>
+
+          <!-- Real-Time Live Countdown Timer -->
+          <div class="mb-8 inline-block p-1 rounded-2xl bg-gradient-to-r from-gold-500/30 via-gold-500/10 to-gold-500/30 border border-gold-500/40">
+            <div class="bg-navy-900/90 rounded-xl p-4 sm:p-6">
+              <div class="grid grid-cols-4 gap-2 sm:gap-6 text-center">
+                <div class="flex flex-col items-center">
+                  <div class="w-14 sm:w-20 h-14 sm:h-20 bg-navy-950 border border-gold-500/30 rounded-xl flex items-center justify-center">
+                    <span id="timer-days" class="font-serif text-xl sm:text-3xl font-bold text-gold-400">00</span>
+                  </div>
+                  <span class="text-[9px] sm:text-xs font-bold uppercase tracking-widest text-slate-400 mt-2">Days</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <div class="w-14 sm:w-20 h-14 sm:h-20 bg-navy-950 border border-gold-500/30 rounded-xl flex items-center justify-center">
+                    <span id="timer-hours" class="font-serif text-xl sm:text-3xl font-bold text-gold-400">00</span>
+                  </div>
+                  <span class="text-[9px] sm:text-xs font-bold uppercase tracking-widest text-slate-400 mt-2">Hours</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <div class="w-14 sm:w-20 h-14 sm:h-20 bg-navy-950 border border-gold-500/30 rounded-xl flex items-center justify-center">
+                    <span id="timer-minutes" class="font-serif text-xl sm:text-3xl font-bold text-gold-400">00</span>
+                  </div>
+                  <span class="text-[9px] sm:text-xs font-bold uppercase tracking-widest text-slate-400 mt-2">Minutes</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <div class="w-14 sm:w-20 h-14 sm:h-20 bg-navy-950 border border-gold-500/30 rounded-xl flex items-center justify-center">
+                    <span id="timer-seconds" class="font-serif text-xl sm:text-3xl font-bold text-gold-300 animate-pulse">00</span>
+                  </div>
+                  <span class="text-[9px] sm:text-xs font-bold uppercase tracking-widest text-slate-400 mt-2">Seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center gap-3 mb-6">
+            <button onclick="openNotifyModal()" class="px-6 py-3 bg-gold-gradient text-navy-950 font-bold rounded-xl text-xs flex items-center gap-2">
+              Registration Coming Soon
+            </button>
+            <button onclick="downloadCalendar()" class="px-5 py-3 bg-navy-900 border border-gold-500/30 text-white font-semibold rounded-xl text-xs hover:bg-navy-850 transition-colors">
+              Add to Calendar (.ics)
+            </button>
+            <button onclick="openShareModal()" class="px-4 py-3 bg-navy-900/60 border border-navy-700 text-slate-300 font-medium rounded-xl text-xs hover:text-white transition-colors">
+              Share Event
+            </button>
+          </div>
+
+          <p class="font-serif text-base font-bold text-gold-300 uppercase tracking-widest border-t border-navy-800 pt-4">
+            Building Influence. Shaping Narrative. Advancing Sovereignty.
+          </p>
+
+          <!-- Official Banner Slot Placeholder -->
+          <div class="placeholder-target mt-8 max-w-3xl mx-auto rounded-2xl border border-gold-500/30 bg-navy-900/80 p-6 text-center">
+            <p class="text-xs font-bold text-gold-400 uppercase tracking-widest">Official Summit Banner Slot</p>
+            <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded mt-2">
+              PLACEHOLDER: Annual Diplomacy Day Official Banner
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Event Specification Grid -->
+      <div class="max-w-6xl mx-auto px-4 mb-16">
+        
+        <div class="mb-8 p-6 bg-navy-900 border border-gold-500/40 rounded-2xl text-center shadow-lg">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400 block mb-1">Summit Theme 2026</span>
+          <h3 class="font-serif text-xl sm:text-2xl font-bold text-white">
+            "National Strategic Dialogue on Diplomacy, State Media Diplomacy and Global Influence"
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 bg-navy-900 border border-navy-800 rounded-xl shadow">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400 block mb-1">Date</span>
+            <h4 class="font-serif text-xl font-bold text-white mb-1">20 November 2026</h4>
+            <p class="text-xs text-slate-400">Friday · 09:00 AM WAT Prompt</p>
+          </div>
+          <div class="p-6 bg-navy-900 border border-navy-800 rounded-xl flex flex-col justify-between shadow">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400 block mb-1">Venue</span>
+              <h4 class="font-serif text-xl font-bold text-white mb-1">Shehu Musa Yar'Adua Centre</h4>
+              <p class="text-xs text-slate-400 mb-3">One Memorial Drive, CBD, Abuja, Nigeria</p>
+            </div>
+            <button onclick="openVenueModal()" class="px-3 py-1.5 bg-navy-950 border border-gold-500/30 text-gold-400 font-semibold rounded-lg text-xs hover:bg-navy-900 transition-colors">
+              Venue Guide & Map
+            </button>
+          </div>
+          <div class="p-6 bg-navy-900 border border-navy-800 rounded-xl shadow">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400 block mb-1">Target Audience</span>
+            <h4 class="font-serif text-xl font-bold text-white mb-1">500+ High-Level Delegates</h4>
+            <p class="text-xs text-slate-400">Ministers, Envoys, Media Directors & Scholars</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Why Attend Cards -->
+      <div class="max-w-6xl mx-auto px-4 mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Why <span class="text-gold-gradient">Attend</span></h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-6 bg-navy-900 border border-navy-800 rounded-xl">
+            <h4 class="font-serif text-lg font-bold text-white mb-1">Learn from Seasoned Practitioners</h4>
+            <p class="text-xs text-slate-300">Gain direct insights from foreign policy architects, ambassadors, and broadcast directors.</p>
+          </div>
+          <div class="p-6 bg-navy-900 border border-navy-800 rounded-xl">
+            <h4 class="font-serif text-lg font-bold text-white mb-1">Network with Diplomatic Corps</h4>
+            <p class="text-xs text-slate-300">Connect with members of foreign missions, government ministers, and international correspondents.</p>
+          </div>
+          <div class="p-6 bg-navy-900 border border-navy-800 rounded-xl">
+            <h4 class="font-serif text-lg font-bold text-white mb-1">Founding National Tradition</h4>
+            <p class="text-xs text-slate-300">Participate in the inaugural edition establishing Nigeria's annual public diplomacy summit.</p>
+          </div>
+          <div class="p-6 bg-navy-900 border border-navy-800 rounded-xl">
+            <h4 class="font-serif text-lg font-bold text-white mb-1">Master Sovereign Narrative Power</h4>
+            <p class="text-xs text-slate-300">Understand how modern state media, digital platforms, and strategic messaging protect national credibility.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW: BOOK LAUNCH SUBSECTION (Editable Placeholders + Official Notice) -->
+      <div id="book-launch" class="max-w-6xl mx-auto px-4 mb-16">
+        <div class="p-8 sm:p-10 bg-gradient-to-br from-navy-900 via-navy-950 to-navy-900 border-2 border-gold-500/40 rounded-3xl shadow-2xl relative overflow-hidden">
+          
+          <!-- Decorative Background Crest Glow -->
+          <div class="absolute -right-10 -bottom-10 w-72 h-72 rounded-full bg-gold-500/5 blur-3xl pointer-events-none"></div>
+
+          <!-- Section Label & Header -->
+          <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="px-3.5 py-1 bg-gold-500/15 border border-gold-500/40 text-gold-300 text-[11px] font-bold uppercase tracking-widest font-mono rounded-full inline-block mb-3">
+              Special Event Feature · Flagship Publication
+            </span>
+            <h3 class="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight">
+              Featured <span class="text-gold-gradient">Book Launch</span>
+            </h3>
+            <div class="w-20 h-0.5 bg-gold-gradient mx-auto rounded-full mt-3"></div>
+            <p class="text-xs sm:text-sm text-slate-300 mt-3 max-w-xl mx-auto">
+              A landmark scholarly and policy work unveiled at Annual Diplomacy Day 2026.
+            </p>
+          </div>
+
+          <!-- Book Presentation Card (Editable Placeholders) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-8">
+            
+            <!-- Book Cover Image Placeholder -->
+            <div class="lg:col-span-4 flex justify-center">
+              <div class="placeholder-target w-56 sm:w-64 aspect-[3/4] bg-navy-950 border-2 border-gold-500/40 rounded-2xl shadow-2xl p-6 flex flex-col items-center justify-between text-center relative group">
+                <div class="w-full pt-4">
+                  <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                  </div>
+                  <span class="text-[11px] font-serif font-bold text-slate-200 block">Featured Monograph</span>
+                </div>
+                <div>
+                  <span class="text-xs font-bold text-gold-400 uppercase tracking-widest block mb-1">Cover Art Slot</span>
+                  <span class="inline-block px-2.5 py-1 bg-gold-500/20 text-gold-300 text-[10px] font-bold uppercase rounded">
+                    [PLACEHOLDER: Book Cover Image]
+                  </span>
+                </div>
+                <div class="text-[9px] font-mono text-slate-400">
+                  Media Diplomacy Studies Press
+                </div>
+              </div>
+            </div>
+
+            <!-- Book Metadata & Details Placeholders -->
+            <div class="lg:col-span-8 space-y-4">
+              
+              <!-- Book Title Placeholder -->
+              <div class="placeholder-target p-4 bg-navy-950/70 border border-gold-500/30 rounded-xl">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-gold-400 font-bold block mb-1">
+                  Book Title
+                </span>
+                <h4 class="font-serif text-2xl sm:text-3xl font-bold text-white">
+                  [PLACEHOLDER: Book Title / Monograph Heading]
+                </h4>
+              </div>
+
+              <!-- Author Name Placeholder -->
+              <div class="placeholder-target p-4 bg-navy-950/70 border border-navy-800 rounded-xl">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-gold-400 font-bold block mb-1">
+                  Author's Name & Credentials
+                </span>
+                <p class="font-serif text-lg font-bold text-gold-300">
+                  Author: [PLACEHOLDER: Author's Name / Senior Research Fellow]
+                </p>
+              </div>
+
+              <!-- Book Description Placeholder -->
+              <div class="placeholder-target p-4 bg-navy-950/70 border border-navy-800 rounded-xl">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-gold-400 font-bold block mb-1">
+                  Book Description & Synopsis
+                </span>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  [PLACEHOLDER: Comprehensive Book Description — Examining sovereign communication architecture, state broadcasting governance, digital narrative defense, and diplomatic image projection across Africa and the contemporary multilateral arena.]
+                </p>
+              </div>
+
+              <!-- Launch Details Placeholder -->
+              <div class="placeholder-target p-4 bg-navy-950/70 border border-navy-800 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <span class="text-[10px] font-mono uppercase tracking-widest text-gold-400 font-bold block mb-0.5">
+                    Launch Details
+                  </span>
+                  <p class="text-xs text-slate-200 font-mono">
+                    Friday, 20 November 2026 · Shehu Musa Yar'Adua Centre, Abuja · Official Summit Presentation
+                  </p>
+                </div>
+                <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded shrink-0">
+                  [PLACEHOLDER: Launch Details]
+                </span>
+              </div>
+
+              <!-- Optional Information / Purchase Link Placeholder -->
+              <div class="pt-2 flex flex-wrap items-center gap-3">
+                <div class="placeholder-target inline-block">
+                  <button onclick="alert('Book purchase and pre-order information placeholder: Pre-orders and digital editions will be made available closer to the launch date.')" class="px-5 py-2.5 bg-gold-gradient hover:bg-gold-gradient-hover text-navy-950 font-bold text-xs rounded-xl shadow transition-all flex items-center gap-1.5">
+                    <span>[PLACEHOLDER: Book Information & Pre-Order Link]</span>
+                    <span>→</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- EXACT MANDATORY NOTICE TEXT -->
+          <div class="p-4 sm:p-5 bg-gold-500/10 border border-gold-500/30 rounded-2xl text-center">
+            <p class="text-xs sm:text-sm text-gold-300 font-semibold font-mono tracking-wide">
+              Further details about the featured book, its author, and the official launch will be announced soon.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Featured Speakers Faculty -->
+      <div id="summit-speakers" class="max-w-6xl mx-auto px-4 mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Featured <span class="text-gold-gradient">Speakers</span></h3>
+        </div>
+        <div class="mb-8 p-4 bg-gold-500/10 border border-gold-500/30 rounded-xl text-center text-xs text-gold-300 font-bold uppercase tracking-wider">
+          More Speakers Coming Soon — Additional ministerial confirmations pending Q3 2026
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div onclick="openSpeakerModal('[Keynote Speaker Placeholder]', 'Minister of Foreign Affairs', 'Ministry of Foreign Affairs', 'Keynote', 'Placeholder profile reserved for official keynote guest announcement.')" class="placeholder-target p-4 bg-navy-900 border border-navy-800 hover:border-gold-500/40 rounded-xl cursor-pointer transition-colors shadow">
+            <div class="w-full h-32 bg-navy-950 rounded-lg mb-3 flex flex-col items-center justify-center p-2 text-center">
+              <span class="text-[10px] text-gold-400 font-bold uppercase">Keynote</span>
+              <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded mt-1">Speaker Headshot</span>
+            </div>
+            <h4 class="font-serif text-sm font-bold text-white">[Keynote Speaker Placeholder]</h4>
+            <p class="text-[11px] text-slate-400">Ministry of Foreign Affairs</p>
+          </div>
+          <div onclick="openSpeakerModal('[Diplomatic Corps Chair Placeholder]', 'Dean of Diplomatic Corps', 'Diplomatic Mission', 'Guest of Honour', 'Placeholder profile reserved for official ambassador announcement.')" class="placeholder-target p-4 bg-navy-900 border border-navy-800 hover:border-gold-500/40 rounded-xl cursor-pointer transition-colors shadow">
+            <div class="w-full h-32 bg-navy-950 rounded-lg mb-3 flex flex-col items-center justify-center p-2 text-center">
+              <span class="text-[10px] text-gold-400 font-bold uppercase">Guest of Honour</span>
+              <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded mt-1">Speaker Headshot</span>
+            </div>
+            <h4 class="font-serif text-sm font-bold text-white">[Diplomatic Corps Chair Placeholder]</h4>
+            <p class="text-[11px] text-slate-400">Diplomatic Mission, Abuja</p>
+          </div>
+          <div onclick="openSpeakerModal('[State Media Director Placeholder]', 'Director-General', 'State Media Authority', 'Panelist', 'Placeholder profile reserved for official media speaker announcement.')" class="placeholder-target p-4 bg-navy-900 border border-navy-800 hover:border-gold-500/40 rounded-xl cursor-pointer transition-colors shadow">
+            <div class="w-full h-32 bg-navy-950 rounded-lg mb-3 flex flex-col items-center justify-center p-2 text-center">
+              <span class="text-[10px] text-gold-400 font-bold uppercase">Panelist</span>
+              <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded mt-1">Speaker Headshot</span>
+            </div>
+            <h4 class="font-serif text-sm font-bold text-white">[State Media Director Placeholder]</h4>
+            <p class="text-[11px] text-slate-400">State Media Authority</p>
+          </div>
+          <div onclick="openSpeakerModal('[International Law Scholar Placeholder]', 'Professor of Diplomacy', 'NIIA Institute', 'Session Chair', 'Placeholder profile reserved for official academic speaker announcement.')" class="placeholder-target p-4 bg-navy-900 border border-navy-800 hover:border-gold-500/40 rounded-xl cursor-pointer transition-colors shadow">
+            <div class="w-full h-32 bg-navy-950 rounded-lg mb-3 flex flex-col items-center justify-center p-2 text-center">
+              <span class="text-[10px] text-gold-400 font-bold uppercase">Session Chair</span>
+              <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded mt-1">Speaker Headshot</span>
+            </div>
+            <h4 class="font-serif text-sm font-bold text-white">[International Law Scholar Placeholder]</h4>
+            <p class="text-[11px] text-slate-400">NIIA Institute</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expected Programme Schedule -->
+      <div id="summit-agenda" class="max-w-5xl mx-auto px-4 mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Expected <span class="text-gold-gradient">Programme</span></h3>
+        </div>
+        <div class="mb-8 p-4 bg-navy-900 border border-gold-500/30 rounded-xl text-center text-xs text-gold-400 font-bold uppercase font-mono">
+          Full programme will be updated soon
+        </div>
+        <div class="space-y-3">
+          <div class="p-4 bg-navy-900 border border-navy-800 rounded-xl flex items-center justify-between text-xs">
+            <div><span class="font-mono font-bold text-gold-400 mr-3">08:30 WAT</span><strong class="text-white font-serif text-sm">Delegate Accreditation & Protocol</strong></div>
+            <span class="px-2 py-0.5 bg-navy-950 text-slate-400 rounded text-[10px] uppercase font-bold">Welcome</span>
+          </div>
+          <div class="p-4 bg-navy-900 border border-navy-800 rounded-xl flex items-center justify-between text-xs">
+            <div><span class="font-mono font-bold text-gold-400 mr-3">09:30 WAT</span><strong class="text-white font-serif text-sm">Opening Ceremony & Presidential Keynote</strong></div>
+            <span class="px-2 py-0.5 bg-navy-950 text-slate-400 rounded text-[10px] uppercase font-bold">Keynote</span>
+          </div>
+          <div class="p-4 bg-navy-900 border border-navy-800 rounded-xl flex items-center justify-between text-xs">
+            <div><span class="font-mono font-bold text-gold-400 mr-3">11:30 WAT</span><strong class="text-white font-serif text-sm">Plenary I: Strategic Communication & Perception</strong></div>
+            <span class="px-2 py-0.5 bg-navy-950 text-slate-400 rounded text-[10px] uppercase font-bold">Panel</span>
+          </div>
+          <div class="p-4 bg-navy-900 border border-navy-800 rounded-xl flex items-center justify-between text-xs">
+            <div><span class="font-mono font-bold text-gold-400 mr-3">13:00 WAT</span><strong class="text-white font-serif text-sm">Executive Luncheon & Ambassadorial Roundtable</strong></div>
+            <span class="px-2 py-0.5 bg-navy-950 text-slate-400 rounded text-[10px] uppercase font-bold">Networking</span>
+          </div>
+          <div class="p-4 bg-navy-900 border border-navy-800 rounded-xl flex items-center justify-between text-xs">
+            <div><span class="font-mono font-bold text-gold-400 mr-3">14:30 WAT</span><strong class="text-white font-serif text-sm">Plenary II: State Media Broadcasting & Soft Power</strong></div>
+            <span class="px-2 py-0.5 bg-navy-950 text-slate-400 rounded text-[10px] uppercase font-bold">Panel</span>
+          </div>
+          <div class="p-4 bg-navy-900 border border-navy-800 rounded-xl flex items-center justify-between text-xs">
+            <div><span class="font-mono font-bold text-gold-400 mr-3">16:00 WAT</span><strong class="text-white font-serif text-sm">Abuja Communiqué & Closing Ceremony</strong></div>
+            <span class="px-2 py-0.5 bg-navy-950 text-slate-400 rounded text-[10px] uppercase font-bold">Communique</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Registration Coming Soon Panel -->
+      <div class="max-w-4xl mx-auto px-4 mb-16">
+        <div class="p-8 bg-navy-900 border-2 border-gold-500/40 rounded-3xl text-center space-y-4 shadow-xl">
+          <span class="px-3 py-1 bg-gold-500/10 text-gold-400 text-xs font-bold uppercase rounded-full inline-block">
+            Official Accreditation Notice
+          </span>
+          <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">
+            Registration <span class="text-gold-gradient">Opens Soon</span>
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+            Registration is not open yet. Official delegate accreditation guidelines and seating tiers will launch soon. Submit your details for early access, to: <a href="mailto:info@mediadiplomacy.org.ng" class="text-gold-400 font-mono font-semibold hover:underline">info@mediadiplomacy.org.ng</a>
+          </p>
+          <button onclick="openNotifyModal()" class="px-6 py-3.5 bg-gold-gradient text-navy-950 font-bold rounded-xl text-xs flex items-center justify-center gap-2 mx-auto shadow-lg hover:bg-gold-gradient-hover transition-all">
+            Notify Me When Registration Opens
+          </button>
+        </div>
+      </div>
+
+      <!-- Partners & Institutional Sponsors Grid -->
+      <div class="max-w-6xl mx-auto px-4 mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Partners & <span class="text-gold-gradient">Institutional Sponsors</span></h3>
+          <p class="text-xs text-slate-400 mt-1">Partnership opportunities available</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="placeholder-target p-4 bg-navy-900 border border-navy-800 rounded-xl text-center">
+            <span class="text-xs text-slate-300 block mb-1">[Ministry Partner Placeholder]</span>
+            <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded">Partner Logo</span>
+          </div>
+          <div class="placeholder-target p-4 bg-navy-900 border border-navy-800 rounded-xl text-center">
+            <span class="text-xs text-slate-300 block mb-1">[Diplomatic Corps Placeholder]</span>
+            <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded">Partner Logo</span>
+          </div>
+          <div class="placeholder-target p-4 bg-navy-900 border border-navy-800 rounded-xl text-center">
+            <span class="text-xs text-slate-300 block mb-1">[NIIA Academic Placeholder]</span>
+            <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded">Partner Logo</span>
+          </div>
+          <div class="placeholder-target p-4 bg-navy-900 border border-navy-800 rounded-xl text-center">
+            <span class="text-xs text-slate-300 block mb-1">[Media Network Placeholder]</span>
+            <span class="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-300 text-[9px] font-bold uppercase rounded">Partner Logo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQs Accordion -->
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Frequently Asked <span class="text-gold-gradient">Questions</span></h3>
+        </div>
+        <div class="space-y-3">
+          <div class="bg-navy-900 border border-navy-800 rounded-xl overflow-hidden">
+            <button onclick="toggleFaq('faq-1')" class="w-full p-4 text-left font-serif text-sm font-bold text-white flex justify-between">
+              <span>Who can attend Annual Diplomacy Day?</span>
+              <span id="faq-1-icon">−</span>
+            </button>
+            <div id="faq-1" class="px-4 pb-4 text-xs text-slate-300 leading-relaxed">
+              The summit convenes accredited diplomats, ministers, public broadcasting directors, foreign correspondents, academics, and strategic communication leaders.
+            </div>
+          </div>
+          <div class="bg-navy-900 border border-navy-800 rounded-xl overflow-hidden">
+            <button onclick="toggleFaq('faq-2')" class="w-full p-4 text-left font-serif text-sm font-bold text-white flex justify-between">
+              <span>Is delegate registration free?</span>
+              <span id="faq-2-icon">+</span>
+            </button>
+            <div id="faq-2" class="hidden px-4 pb-4 text-xs text-slate-300 leading-relaxed">
+              Yes, delegate accreditation for the inaugural summit is complimentary, subject to advance institutional registration and security clearance.
+            </div>
+          </div>
+          <div class="bg-navy-900 border border-navy-800 rounded-xl overflow-hidden">
+            <button onclick="toggleFaq('faq-3')" class="w-full p-4 text-left font-serif text-sm font-bold text-white flex justify-between">
+              <span>What is the relationship between MDS and Annual Diplomacy Day?</span>
+              <span id="faq-3-icon">+</span>
+            </button>
+            <div id="faq-3" class="hidden px-4 pb-4 text-xs text-slate-300 leading-relaxed">
+              Annual Diplomacy Day is the flagship national convening established and organized under Media Diplomacy Studies (MDS) to bridge scholarship and diplomatic practice.
+            </div>
+          </div>
+          <div class="bg-navy-900 border border-navy-800 rounded-xl overflow-hidden">
+            <button onclick="toggleFaq('faq-4')" class="w-full p-4 text-left font-serif text-sm font-bold text-white flex justify-between">
+              <span>Where is the venue and how do I get there?</span>
+              <span id="faq-4-icon">+</span>
+            </button>
+            <div id="faq-4" class="hidden px-4 pb-4 text-xs text-slate-300 leading-relaxed">
+              Shehu Musa Yar'Adua Centre, One Memorial Drive, Central Business District, Abuja. Click the "Venue Guide & Map" button above for driving directions.
+            </div>
+          </div>
+          <div class="bg-navy-900 border border-navy-800 rounded-xl overflow-hidden">
+            <button onclick="toggleFaq('faq-5')" class="w-full p-4 text-left font-serif text-sm font-bold text-white flex justify-between">
+              <span>Will summit proceedings and the Abuja Communiqué be published?</span>
+              <span id="faq-5-icon">+</span>
+            </button>
+            <div id="faq-5" class="hidden px-4 pb-4 text-xs text-slate-300 leading-relaxed">
+              Yes, accredited delegates receive an official Certificate of Participation, and the Abuja Communiqué will be published across MDS research channels.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 text-white border-t border-gold-500/30 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-navy-800 text-center md:text-left">
+        <div class="flex items-center gap-3">
+          <img src="/mds-logo.png" alt="MDS Logo" class="w-12 h-12 object-contain" />
+          <div>
+            <h4 class="font-serif text-xl font-bold text-white">Media Diplomacy Studies (MDS)</h4>
+            <p class="text-[11px] text-slate-400 font-mono">RESEARCH • POLICY • STRATEGIC INFLUENCE</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-mono text-gold-400">
+          <a href="index.html" class="hover:underline">Home</a>
+          <a href="about.html" class="hover:underline">About</a>
+          <a href="research.html" class="hover:underline">Research & Studies</a>
+          <a href="publications.html" class="hover:underline">Publications</a>
+          <a href="diplomacy-day.html" class="hover:underline font-bold text-white">Annual Diplomacy Day</a>
+          <a href="contact.html" class="hover:underline">Contact</a>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 text-center sm:text-left">
+        <p>© 2026 Media Diplomacy Studies (MDS) · mediadiplomacy.org.ng · All Rights Reserved.</p>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="p-2 bg-navy-900 border border-gold-500/30 text-gold-400 rounded-lg text-xs hover:text-white">
+          ↑ Back to Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- Notify / Accreditation Modal -->
+  <div id="notify-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
+    <div class="relative w-full max-w-lg overflow-hidden bg-[#0A192F] border border-gold-500/40 rounded-2xl shadow-2xl text-white p-6 md:p-8">
+      <button onclick="closeNotifyModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">✕</button>
+      <div id="notify-form-view">
+        <span class="text-[10px] font-mono uppercase font-bold text-gold-400">Annual Diplomacy Day 2026</span>
+        <h3 class="text-2xl font-serif font-bold text-white mb-2">Priority Accreditation Notice</h3>
+        <p class="text-xs text-slate-300 mb-6">Registration is not open yet. Official delegate accreditation guidelines and seating tiers will launch soon. Submit your details for early access, to: <a href="mailto:info@mediadiplomacy.org.ng" class="text-gold-400 font-mono underline hover:text-gold-300">info@mediadiplomacy.org.ng</a></p>
+        <form onsubmit="handleNotifySubmit(event)" class="space-y-3">
+          <input type="text" required id="not-name" placeholder="Full Name *" class="w-full px-4 py-2.5 bg-navy-950 border border-navy-700 rounded-lg text-white text-sm focus:outline-none focus:border-gold-500" />
+          <input type="email" required id="not-email" placeholder="Official Email Address *" class="w-full px-4 py-2.5 bg-navy-950 border border-navy-700 rounded-lg text-white text-sm focus:outline-none focus:border-gold-500" />
+          <input type="text" id="not-org" placeholder="Organization / Ministry / Embassy" class="w-full px-4 py-2.5 bg-navy-950 border border-navy-700 rounded-lg text-white text-sm focus:outline-none focus:border-gold-500" />
+          <button type="submit" class="w-full py-3 bg-gold-gradient text-navy-950 font-bold rounded-lg text-xs shadow-lg">Notify Me When Accreditation Opens</button>
+        </form>
+      </div>
+      <div id="notify-success-view" class="hidden py-6 text-center">
+        <h3 class="text-xl font-serif font-bold text-white mb-2">Accreditation Notification Reserved</h3>
+        <p class="text-xs text-slate-300 mb-4">We will notify your official email address with early access guidelines as soon as registration launches.</p>
+        <button onclick="closeNotifyModal()" class="px-6 py-2 bg-navy-800 text-gold-400 font-semibold rounded-lg text-xs border border-gold-500/30">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Share Modal -->
+  <div id="share-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
+    <div class="relative w-full max-w-md bg-[#0A192F] border border-gold-500/40 rounded-2xl text-white p-6 shadow-2xl">
+      <div class="flex items-center justify-between mb-4 border-b border-navy-800 pb-3">
+        <h3 class="text-xl font-serif font-bold text-white">Share Platform</h3>
+        <button onclick="closeShareModal()" class="text-slate-400 hover:text-white">✕</button>
+      </div>
+      <p class="text-xs text-slate-300 mb-4">Invite colleagues and international partners to follow Media Diplomacy Studies and Annual Diplomacy Day.</p>
+      <div class="flex items-center gap-2">
+        <input type="text" readonly value="http://mediadiplomacy.org.ng" class="w-full px-3 py-2 bg-navy-950 border border-navy-700 rounded text-xs text-slate-300" />
+        <button onclick="copyShareUrl()" id="copy-btn" class="px-4 py-2 bg-gold-500 text-navy-950 font-bold rounded text-xs shrink-0">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Venue Modal -->
+  <div id="venue-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
+    <div class="relative w-full max-w-xl max-h-[90vh] overflow-y-auto bg-[#0A192F] border border-gold-500/40 rounded-2xl text-white p-6 shadow-2xl">
+      <div class="flex items-center justify-between mb-4 border-b border-navy-800 pb-3">
+        <h3 class="text-xl font-serif font-bold text-white">Shehu Musa Yar'Adua Centre</h3>
+        <button onclick="closeVenueModal()" class="text-slate-400 hover:text-white">✕</button>
+      </div>
+      <div class="space-y-4 text-xs text-slate-300">
+        <p><strong class="text-gold-400">Address:</strong> One Memorial Drive, Central Business District, Abuja, FCT, Nigeria</p>
+        <p><strong class="text-gold-400">Event Date:</strong> Friday, 20 November 2026 (09:00 WAT Prompt)</p>
+        <div class="placeholder-target h-40 bg-navy-950 border border-navy-700 rounded-xl flex items-center justify-center text-center p-4">
+          <span class="text-xs font-bold text-white">Abuja CBD Venue Map Embed [PLACEHOLDER]</span>
+        </div>
+        <div class="flex justify-end pt-2">
+          <a href="https://maps.google.com/?q=Shehu+Musa+Yar%27Adua+Centre+Abuja" target="_blank" rel="noopener noreferrer" class="px-5 py-2 bg-gold-gradient text-navy-950 font-bold rounded-lg text-xs">
+            Open in Google Maps →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Speaker Modal -->
+  <div id="speaker-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
+    <div class="relative w-full max-w-lg bg-[#0A192F] border border-gold-500/40 rounded-2xl text-white p-6 shadow-2xl">
+      <button onclick="closeSpeakerModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">✕</button>
+      <span id="spk-role" class="px-2.5 py-0.5 bg-gold-500/10 text-gold-400 text-[10px] font-bold uppercase rounded inline-block mb-2">Role</span>
+      <h3 id="spk-name" class="text-xl font-serif font-bold text-white mb-1">Speaker Name</h3>
+      <p id="spk-title" class="text-xs text-gold-300 font-semibold mb-1">Title</p>
+      <p id="spk-org" class="text-xs text-slate-400 mb-4">Organization</p>
+      <p id="spk-bio" class="text-xs text-slate-300 leading-relaxed border-t border-navy-800 pt-3">Bio details</p>
+    </div>
+  </div>
+
+  <!-- PURE VANILLA JAVASCRIPT CONTROLLER ENGINE -->
+  <script>
+    // 1. Live Countdown Timer to 20 November 2026, 09:00 WAT Prompt
+    const targetDate = new Date('2026-11-20T09:00:00+01:00').getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) return;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      const dEl = document.getElementById('timer-days');
+      const hEl = document.getElementById('timer-hours');
+      const mEl = document.getElementById('timer-minutes');
+      const sEl = document.getElementById('timer-seconds');
+
+      if (dEl) dEl.innerText = String(days).padStart(2, '0');
+      if (hEl) hEl.innerText = String(hours).padStart(2, '0');
+      if (mEl) mEl.innerText = String(minutes).padStart(2, '0');
+      if (sEl) sEl.innerText = String(seconds).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // 2. Sticky Navbar Glass Effect on Scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (nav) {
+        if (window.scrollY > 30) {
+          nav.classList.add('py-2', 'border-gold-500/30', 'bg-[#06101E]/98');
+          nav.classList.remove('py-2.5', 'border-gold-500/20', 'bg-[#06101E]/95');
+        } else {
+          nav.classList.remove('py-2', 'border-gold-500/30', 'bg-[#06101E]/98');
+          nav.classList.add('py-2.5', 'border-gold-500/20', 'bg-[#06101E]/95');
+        }
+      }
+    });
+
+    // 3. Dropdowns & Drawers
+    function toggleShortcutsDropdown() {
+      document.getElementById('shortcuts-dropdown').classList.toggle('hidden');
+    }
+    function closeShortcutsDropdown() {
+      document.getElementById('shortcuts-dropdown').classList.add('hidden');
+    }
+
+    // Close Shortcuts dropdown if clicking outside
+    document.addEventListener('click', function(e) {
+      const dropdown = document.getElementById('shortcuts-dropdown');
+      const isInside = e.target.closest('#shortcuts-dropdown') || e.target.closest('button[onclick="toggleShortcutsDropdown()"]');
+      if (!isInside && dropdown && !dropdown.classList.contains('hidden')) {
+        dropdown.classList.add('hidden');
+      }
+    });
+
+    // Mobile Drawer Toggle with frosted glass blur backdrop & body scroll lock
+    function toggleMobileDrawer() {
+      const drawer = document.getElementById('mobile-drawer');
+      const backdrop = document.getElementById('mobile-menu-backdrop');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+      
+      if (!drawer) return;
+
+      if (drawer.classList.contains('hidden')) {
+        drawer.classList.remove('hidden');
+        if (backdrop) backdrop.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        if (iconOpen) iconOpen.classList.add('hidden');
+        if (iconClose) iconClose.classList.remove('hidden');
+      } else {
+        drawer.classList.add('hidden');
+        if (backdrop) backdrop.classList.add('hidden');
+        document.body.style.overflow = '';
+        if (iconOpen) iconOpen.classList.remove('hidden');
+        if (iconClose) iconClose.classList.add('hidden');
+      }
+    }
+
+    // Close mobile drawer on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const drawer = document.getElementById('mobile-drawer');
+        if (drawer && !drawer.classList.contains('hidden')) {
+          toggleMobileDrawer();
+        }
+      }
+    });
+
+    // Close mobile drawer when screen resizes above 1200px
+    window.addEventListener('resize', function() {
+      if (window.innerWidth >= 1200) {
+        const drawer = document.getElementById('mobile-drawer');
+        if (drawer && !drawer.classList.contains('hidden')) {
+          toggleMobileDrawer();
+        }
+      }
+    });
+
+    // 4. Modal Controllers
+    function openNotifyModal() { document.getElementById('notify-modal').classList.remove('hidden'); }
+    function closeNotifyModal() {
+      document.getElementById('notify-modal').classList.add('hidden');
+      document.getElementById('notify-form-view').classList.remove('hidden');
+      document.getElementById('notify-success-view').classList.add('hidden');
+    }
+    function handleNotifySubmit(e) {
+      e.preventDefault();
+      document.getElementById('notify-form-view').classList.add('hidden');
+      document.getElementById('notify-success-view').classList.remove('hidden');
+    }
+
+    function openShareModal() { document.getElementById('share-modal').classList.remove('hidden'); }
+    function closeShareModal() { document.getElementById('share-modal').classList.add('hidden'); }
+    function copyShareUrl() {
+      navigator.clipboard.writeText('http://mediadiplomacy.org.ng/diplomacy-day.html');
+      document.getElementById('copy-btn').innerText = 'Copied!';
+      setTimeout(() => { document.getElementById('copy-btn').innerText = 'Copy'; }, 2000);
+    }
+
+    function openVenueModal() { document.getElementById('venue-modal').classList.remove('hidden'); }
+    function closeVenueModal() { document.getElementById('venue-modal').classList.add('hidden'); }
+
+    function openSpeakerModal(name, title, org, role, bio) {
+      document.getElementById('spk-name').innerText = name;
+      document.getElementById('spk-title').innerText = title;
+      document.getElementById('spk-org').innerText = org;
+      document.getElementById('spk-role').innerText = role;
+      document.getElementById('spk-bio').innerText = bio;
+      document.getElementById('speaker-modal').classList.remove('hidden');
+    }
+    function closeSpeakerModal() { document.getElementById('speaker-modal').classList.add('hidden'); }
+
+    function toggleFaq(id) {
+      const el = document.getElementById(id);
+      const icon = document.getElementById(id + '-icon');
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+        icon.innerText = '−';
+      } else {
+        el.classList.add('hidden');
+        icon.innerText = '+';
+      }
+    }
+
+    function downloadCalendar() {
+      const icsContent = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'BEGIN:VEVENT', 'SUMMARY:Annual Diplomacy Day 2026 — Media Diplomacy Studies', 'LOCATION:Shehu Musa Yar\'Adua Centre\\, Abuja\\, Nigeria', 'DTSTART:20261120T080000Z', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+      const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.setAttribute('download', 'Annual_Diplomacy_Day_2026.ics');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
